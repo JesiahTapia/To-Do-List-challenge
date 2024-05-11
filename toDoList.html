@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+</head>
+<h1>Your To Do List</h1>
+<body>
+    <p>Keep track of what's on the agenda!</p>
+
+    <form onsubmit="addToList()">   
+        <label for="">Add to list:</label>
+        <input type="text" id="addToList">
+        <br>
+        <br>
+        <label for="">Remove from list:</label>
+        <input type="text" id="removeFromList">
+        <hr>
+    </form>
+
+    <p>Current To Do List:</p>
+    <div id="currentList"></div>
+
+</body>
+<script src="toDoList.js"></script>
+</html>
