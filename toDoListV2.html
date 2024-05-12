@@ -7,23 +7,27 @@
 </head>
 <h1>Your To Do List</h1>
 <body>
-    <p>Keep track of what's on the agenda!</p>
+    <p><h4>Keep track of what's on the agenda!</h4></p>
 
     <form onsubmit="addToList()">   
-        <label for="">Add to list:</label>
+        <label for=""><h5>Add to list:</h5></label>
         <input type="text" id="addToList">
-        
-        <input type="submit" value="submit">
+        <input type="submit" value="Add">
         <br>
-        <br>
-        <label for="">Remove from list:</label>
-        <input type="text" id="removeFromList">
-        <hr>
     </form>
 
-    <p>Current To Do List:</p>
+    <form onsubmit="removeFromList()">
+        <label for=""><h5>Remove from list:</h5></label>
+        <input type="text" id="removeFromList">
+        <input type="submit" value="Remove">
+        <hr>   
+    </form>
+
+
+
+    <p><h2>Current To Do List:</h2></p>
     <div id="currentList"></div>
 
 </body>
-<script src="toDoList.js"></script>
+<script src="toDoListV2.js"></script>
 </html>
