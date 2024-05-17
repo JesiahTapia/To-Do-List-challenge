@@ -34,7 +34,7 @@ document.getElementById("currentList").innerHTML = `<p style="color: teal"> ${li
 addToList = () => {
 let listAddition = document.getElementById("addToList").value
 
-    for(let i = 0; i < activeList.length; i++) {
+    // for(let i = 0; i < activeList.length; i++) {
         if (listAddition !== onlist) {
             let updatedList = { goal: listAddition, onlist: true, completed: false }
             activeList.push(updatedList)
@@ -51,4 +51,4 @@ let listAddition = document.getElementById("addToList").value
 
 
 
-}
+// }
